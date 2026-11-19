@@ -16,7 +16,7 @@ file gets one row:
 ```yaml
 estate_schema: 1
 mode: observation
-repo: supernovae-st/nika-registry
+repo: nika-open/nika-registry
 files:
 - path: "CATALOG.md"
   class: generated

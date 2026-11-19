@@ -15,7 +15,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/supernovae-st/nika-estate/actions/workflows/gate.yml"><img src="https://github.com/supernovae-st/nika-estate/actions/workflows/gate.yml/badge.svg?branch=main" alt="Gate status"></a>
+  <a href="https://github.com/nika-open/nika-estate/actions/workflows/gate.yml"><img src="https://github.com/nika-open/nika-estate/actions/workflows/gate.yml/badge.svg?branch=main" alt="Gate status"></a>
   <a href="scripts/estate.py"><img src="https://img.shields.io/badge/python-standard%20library%20only-3776ab.svg" alt="Python standard library only"></a>
   <a href="SCHEMA.md"><img src="https://img.shields.io/badge/manifest-SCHEMA.md-8b8cf8.svg" alt="Manifest format"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-blue.svg" alt="Apache-2.0"></a>
@@ -29,7 +29,7 @@
   </a>
 </p>
 
-<p align="center"><sub>A copy of a real repository (nika-registry) and its copy of the tool, revision <a href="https://github.com/supernovae-st/nika-estate/commit/604324752f9db470b9e83ecbb5f31b0da65641a7"><code>6043247</code></a> (2026-07-31), from before the derivation checks: in sync, one staged edit refused, undone, in sync again. Every verdict is that revision's own output, recorded with <a href="scripts/media/the-bite.tape">the-bite.tape</a>.</sub></p>
+<p align="center"><sub>A copy of a real repository (nika-registry) and its copy of the tool, revision <a href="https://github.com/nika-open/nika-estate/commit/604324752f9db470b9e83ecbb5f31b0da65641a7"><code>6043247</code></a> (2026-07-31), from before the derivation checks: in sync, one staged edit refused, undone, in sync again. Every verdict is that revision's own output, recorded with <a href="scripts/media/the-bite.tape">the-bite.tape</a>.</sub></p>
 
 ## What is Nika?
 
@@ -78,11 +78,11 @@ fold is not built: see the note below.
 > carrier fails its CI when its copy of the tool differs from the revision
 > its `ESTATE_PIN` names, but the carriers do not all name the same
 > revision. nika.sh pins the current tool,
-> [`247deb8`](https://github.com/supernovae-st/nika-estate/commit/247deb86220035bed9b276606ce4a2957c5a8d57),
+> [`247deb8`](https://github.com/nika-open/nika-estate/commit/247deb86220035bed9b276606ce4a2957c5a8d57),
 > a pin only the organization can see; nika-spec carries the same bytes
 > under `tools/estate/` and pins one of its own commits; nika, nika-docs
 > and nika-registry still pin a revision from
-> before the 2026-09-08 fix ([#1](https://github.com/supernovae-st/nika-estate/pull/1))
+> before the 2026-09-08 fix ([#1](https://github.com/nika-open/nika-estate/pull/1))
 > that added the derivation checks. The manifests observe rather than enforce:
 > each repository decides which findings block a change. The fold into one
 > hash and its public anchor are **not built**, and no work on them is
@@ -96,7 +96,7 @@ You need Python 3.9 or newer and git. There is nothing to install.
 1. **Get the tool.**
 
    ```sh
-   git clone https://github.com/supernovae-st/nika-estate && cd nika-estate
+   git clone https://github.com/nika-open/nika-estate && cd nika-estate
    ```
 
 2. **Watch it refuse.** The self-test builds a throwaway repository, plants
@@ -108,7 +108,7 @@ You need Python 3.9 or newer and git. There is nothing to install.
    ```
 
 3. **Check a real repository.** In a clone of a repository that carries an
-   estate, such as [nika-registry](https://github.com/supernovae-st/nika-registry),
+   estate, such as [nika-registry](https://github.com/nika-open/nika-registry),
    run `python3 scripts/estate.py --check`. It regenerates the manifest from
    that checkout and compares it with the committed one.
 
@@ -286,7 +286,7 @@ request, find the phrase from its message in the first column:
 4. **Gate it in CI.** Run `python3 scripts/estate.py --check`, plus a job
    that compares your copy of the tool byte for byte with this repository at
    `ESTATE_PIN`. The engine's
-   [estate workflow](https://github.com/supernovae-st/nika/blob/main/.github/workflows/estate.yml)
+   [estate workflow](https://github.com/nika-open/nika/blob/main/.github/workflows/estate.yml)
    has both.
 
 </details>
@@ -395,18 +395,18 @@ nika-estate follows the organization's
 
 | | Repository | What it gives you |
 |---|---|---|
-| 🦋 | [nika](https://github.com/supernovae-st/nika) | The engine and CLI: write, check, run and verify AI workflows |
-| 📖 | [nika-docs](https://github.com/supernovae-st/nika-docs) | The documentation, live at [docs.nika.sh](https://docs.nika.sh) |
-| 📜 | [nika-spec](https://github.com/supernovae-st/nika-spec) | The language specification and the suite that proves an engine follows it |
-| 🧩 | [nika-vscode](https://github.com/supernovae-st/nika-vscode) | The editor extension, frozen at 0.120 and not qualified with 0.123: use `nika lsp` and the JSON Schema |
-| 🟦 | [nika-client](https://github.com/supernovae-st/nika-client) | Run and verify workflows from TypeScript |
-| ✅ | [nika-action](https://github.com/supernovae-st/nika-action) | A GitHub Action that posts a `nika check` verdict on your pull requests |
-| 🚀 | [nika-actions-starter](https://github.com/supernovae-st/nika-actions-starter) | A ready template: workflows, editor setup and CI from the first push |
-| 📦 | [nika-registry](https://github.com/supernovae-st/nika-registry) | Shareable workflows, pinned and re-verified |
-| 🤖 | [nika-plugins](https://github.com/supernovae-st/nika-plugins) | Teaches your coding agent (Claude Code, Codex, Cursor…) to write Nika |
-| 🍺 | [homebrew-tap](https://github.com/supernovae-st/homebrew-tap) | `brew install supernovae-st/tap/nika` |
-| 🐙 | [gh-nika](https://github.com/supernovae-st/gh-nika) | The Nika CLI as a GitHub CLI extension |
-| 🏛️ | **[nika-estate](https://github.com/supernovae-st/nika-estate)** | **Where each file in Nika's core repositories comes from, declared and re-checkable** |
+| 🦋 | [nika](https://github.com/nika-open/nika) | The engine and CLI: write, check, run and verify AI workflows |
+| 📖 | [nika-docs](https://github.com/nika-open/nika-docs) | The documentation, live at [docs.nika.sh](https://docs.nika.sh) |
+| 📜 | [nika-spec](https://github.com/nika-open/nika-spec) | The language specification and the suite that proves an engine follows it |
+| 🧩 | [nika-vscode](https://github.com/nika-open/nika-vscode) | The editor extension, frozen at 0.120 and not qualified with 0.123: use `nika lsp` and the JSON Schema |
+| 🟦 | [nika-client](https://github.com/nika-open/nika-client) | Run and verify workflows from TypeScript |
+| ✅ | [nika-action](https://github.com/nika-open/nika-action) | A GitHub Action that posts a `nika check` verdict on your pull requests |
+| 🚀 | [nika-actions-starter](https://github.com/nika-open/nika-actions-starter) | A ready template: workflows, editor setup and CI from the first push |
+| 📦 | [nika-registry](https://github.com/nika-open/nika-registry) | Shareable workflows, pinned and re-verified |
+| 🤖 | [nika-plugins](https://github.com/nika-open/nika-plugins) | Teaches your coding agent (Claude Code, Codex, Cursor…) to write Nika |
+| 🍺 | [homebrew-tap](https://github.com/nika-open/homebrew-tap) | `brew install nika-open/tap/nika` |
+| 🐙 | [gh-nika](https://github.com/nika-open/gh-nika) | The Nika CLI as a GitHub CLI extension |
+| 🏛️ | **[nika-estate](https://github.com/nika-open/nika-estate)** | **Where each file in Nika's core repositories comes from, declared and re-checkable** |
 <!-- /city:map -->
 
 ## License
