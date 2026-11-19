@@ -26,7 +26,7 @@ if [ "$NAME" = "selftest" ]; then
   }
 else
   # The stage: a shallow clone of a carrier repo whose estate is green.
-  git clone -q --depth 1 https://github.com/supernovae-st/nika-registry.git /tmp/estate-demo
+  git clone -q --depth 1 https://github.com/nika-open/nika-registry.git /tmp/estate-demo
   (cd /tmp/estate-demo && python3 scripts/estate.py --check >/dev/null) || {
     echo "the carrier's estate must be green before the demo mutates it" >&2
     exit 1

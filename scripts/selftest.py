@@ -109,7 +109,7 @@ def build(root: pathlib.Path):
     sh("git", "config", "user.name", "selftest", cwd=root, check=True)
     # The tool derives the repo slug from origin and refuses without one.
     sh("git", "remote", "add", "origin",
-       "https://github.com/supernovae-st/fixture.git", cwd=root, check=True)
+       "https://github.com/nika-open/fixture.git", cwd=root, check=True)
     sh("git", "add", "-A", cwd=root, check=True)
     sh("git", "commit", "-qm", "fixture", cwd=root, check=True)
     r = sh(sys.executable, "scripts/estate.py", "--write", cwd=root)
