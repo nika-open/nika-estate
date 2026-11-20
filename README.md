@@ -383,7 +383,7 @@ matches.
 ## Security
 
 nika-estate follows the organization's
-[security policy](https://github.com/supernovae-st/.github/blob/main/SECURITY.md).
+[security policy](https://github.com/nika-open/.github/blob/main/SECURITY.md).
 
 > [!IMPORTANT]
 > Found a way to make the tool accept drift or a coverage hole, or to let a
