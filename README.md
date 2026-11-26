@@ -1,8 +1,12 @@
 <p align="center">
   <a href="https://nika.sh">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://nika.sh/brand/nika-logo-dark.svg">
-      <img src="https://nika.sh/brand/nika-logo-light.svg" alt="Nika" width="220">
+      <source media="(prefers-reduced-motion: reduce) and (prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nika-open/.github/main/profile/assets/banner-nika-estate-dark.png?v=afa2249ddaf6">
+      <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/nika-open/.github/main/profile/assets/banner-nika-estate-light.png?v=4b420c23663d">
+      <source media="(prefers-color-scheme: dark)" type="image/webp" srcset="https://raw.githubusercontent.com/nika-open/.github/main/profile/assets/banner-nika-estate-dark.webp?v=26b9489e2371">
+      <source type="image/webp" srcset="https://raw.githubusercontent.com/nika-open/.github/main/profile/assets/banner-nika-estate-light.webp?v=6ff4ac0ad239">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nika-open/.github/main/profile/assets/banner-nika-estate-dark.gif?v=8c9cc6379400">
+      <img src="https://raw.githubusercontent.com/nika-open/.github/main/profile/assets/banner-nika-estate-light.gif?v=768415b2be21" alt="Nika. Provenance. Where every file comes from. Each file is written by a person or produced by a recorded step you can re-run. One small tool says which." width="100%">
     </picture>
   </a>
 </p>
@@ -17,7 +21,7 @@
 <p align="center">
   <a href="https://github.com/nika-open/nika-estate/actions/workflows/gate.yml"><img src="https://github.com/nika-open/nika-estate/actions/workflows/gate.yml/badge.svg?branch=main" alt="Gate status"></a>
   <a href="scripts/estate.py"><img src="https://img.shields.io/badge/python-standard%20library%20only-3776ab.svg" alt="Python standard library only"></a>
-  <a href="SCHEMA.md"><img src="https://img.shields.io/badge/manifest-SCHEMA.md-8b8cf8.svg" alt="Manifest format"></a>
+  <a href="SCHEMA.md"><img src="https://img.shields.io/badge/manifest-SCHEMA.md-2650ff.svg" alt="Manifest format"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-blue.svg" alt="Apache-2.0"></a>
 </p>
 
@@ -392,6 +396,13 @@ nika-estate follows the organization's
 
 <!-- city:map -->
 ## 🦋 The Nika family
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nika-open/.github/main/profile/assets/family-dark.png?v=4cfc8ec611de">
+    <img src="https://raw.githubusercontent.com/nika-open/.github/main/profile/assets/family-light.png?v=dfedffa46450" alt="The repositories of Nika. The language and its engine: nika-spec and nika. From the tools you already use: nika-plugins, nika-vscode, nika-client and gh-nika. On every pull request, and beyond: nika-action, nika-actions-starter, nika-registry, homebrew-tap, nika-estate and nika-docs." width="100%">
+  </picture>
+</p>
 
 | | Repository | What it gives you |
 |---|---|---|
